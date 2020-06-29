@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		787ACBEF24AA57BE006F2E48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787ACBEE24AA57BE006F2E48 /* Preview Assets.xcassets */; };
 		787ACBFA24AA57BF006F2E48 /* ModernIOSAppWithPackagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ACBF924AA57BF006F2E48 /* ModernIOSAppWithPackagesTests.swift */; };
 		787ACC0524AA57BF006F2E48 /* ModernIOSAppWithPackagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ACC0424AA57BF006F2E48 /* ModernIOSAppWithPackagesUITests.swift */; };
+		787ACC1624AA5F49006F2E48 /* Colors in Frameworks */ = {isa = PBXBuildFile; productRef = 787ACC1524AA5F49006F2E48 /* Colors */; };
+		787ACC1824AA5F49006F2E48 /* Fonts in Frameworks */ = {isa = PBXBuildFile; productRef = 787ACC1724AA5F49006F2E48 /* Fonts */; };
+		787ACC1A24AA5F49006F2E48 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 787ACC1924AA5F49006F2E48 /* Networking */; };
+		787ACC1C24AA5F49006F2E48 /* Themes in Frameworks */ = {isa = PBXBuildFile; productRef = 787ACC1B24AA5F49006F2E48 /* Themes */; };
+		787ACC1E24AA5F49006F2E48 /* UseCases in Frameworks */ = {isa = PBXBuildFile; productRef = 787ACC1D24AA5F49006F2E48 /* UseCases */; };
+		787ACC2024AA5F49006F2E48 /* Views in Frameworks */ = {isa = PBXBuildFile; productRef = 787ACC1F24AA5F49006F2E48 /* Views */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,7 @@
 		787ACC0024AA57BF006F2E48 /* ModernIOSAppWithPackagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModernIOSAppWithPackagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787ACC0424AA57BF006F2E48 /* ModernIOSAppWithPackagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernIOSAppWithPackagesUITests.swift; sourceTree = "<group>"; };
 		787ACC0624AA57BF006F2E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787ACC1324AA5A7A006F2E48 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787ACC1E24AA5F49006F2E48 /* UseCases in Frameworks */,
+				787ACC1C24AA5F49006F2E48 /* Themes in Frameworks */,
+				787ACC1A24AA5F49006F2E48 /* Networking in Frameworks */,
+				787ACC2024AA5F49006F2E48 /* Views in Frameworks */,
+				787ACC1624AA5F49006F2E48 /* Colors in Frameworks */,
+				787ACC1824AA5F49006F2E48 /* Fonts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +88,12 @@
 		787ACBDB24AA57BD006F2E48 = {
 			isa = PBXGroup;
 			children = (
+				787ACC1324AA5A7A006F2E48 /* Modules */,
 				787ACBE624AA57BD006F2E48 /* ModernIOSAppWithPackages */,
 				787ACBF824AA57BF006F2E48 /* ModernIOSAppWithPackagesTests */,
 				787ACC0324AA57BF006F2E48 /* ModernIOSAppWithPackagesUITests */,
 				787ACBE524AA57BD006F2E48 /* Products */,
+				787ACC1424AA5F49006F2E48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +145,13 @@
 			path = ModernIOSAppWithPackagesUITests;
 			sourceTree = "<group>";
 		};
+		787ACC1424AA5F49006F2E48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +168,14 @@
 			dependencies = (
 			);
 			name = ModernIOSAppWithPackages;
+			packageProductDependencies = (
+				787ACC1524AA5F49006F2E48 /* Colors */,
+				787ACC1724AA5F49006F2E48 /* Fonts */,
+				787ACC1924AA5F49006F2E48 /* Networking */,
+				787ACC1B24AA5F49006F2E48 /* Themes */,
+				787ACC1D24AA5F49006F2E48 /* UseCases */,
+				787ACC1F24AA5F49006F2E48 /* Views */,
+			);
 			productName = ModernIOSAppWithPackages;
 			productReference = 787ACBE424AA57BD006F2E48 /* ModernIOSAppWithPackages.app */;
 			productType = "com.apple.product-type.application";
@@ -580,6 +610,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		787ACC1524AA5F49006F2E48 /* Colors */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Colors;
+		};
+		787ACC1724AA5F49006F2E48 /* Fonts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Fonts;
+		};
+		787ACC1924AA5F49006F2E48 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		787ACC1B24AA5F49006F2E48 /* Themes */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Themes;
+		};
+		787ACC1D24AA5F49006F2E48 /* UseCases */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UseCases;
+		};
+		787ACC1F24AA5F49006F2E48 /* Views */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Views;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 787ACBDC24AA57BD006F2E48 /* Project object */;
 }
